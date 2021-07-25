@@ -11,11 +11,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
-      home:asdasd,
+      home:MyHomePage(),
     );
   }
 }
 
+
+class MyHomePage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(title: Text("Finansy App")),
+      body: Text("Hello User , Welcome!"));
+  }
+}
 
